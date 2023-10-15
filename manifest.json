@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Weather Scrolling Bar",
+  "description": "Base Level Extension",
+  "version": "1.0",
+  "action": {
+    "default_icon": "HKOLogo-color-symbol.png",
+    "default_popup": "popup.html"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://*/", "https://*/*"],
+      "js": ["topbar.js"],
+      "css": ["styles.css"]
+    }
+  ],
+
+  "permissions": ["activeTab", "storage"]
+}
